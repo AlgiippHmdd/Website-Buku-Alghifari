@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Usaha Buku Alghifari</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Produk.html">Produk</a></li>
+      <li><a href="Bedah Buku Artikel.html">Bedah Buku Artikel</a></li>
+      <li><a href="Testimoni.html">Testimoni</a></li>
+      <li><a href="Tampil Testimoni.html">Tampil Testimoni</a></li>
+      <li><a href="Video Produk Event.html">Video Produk Event</a></li>
+      <li><a href="Kontak.html">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <section class="daftar-produk">
+    <div class="produk">
+      <img src="Gemini_Generated_Image_ry9lmrry9lmrry9l_si_kecil_pemberani.png">
+      <div class="container">
+        <div class="stat-card">
+          <span class="counter" data-target="19999">0</span>
+          <span class="label">Pengunjung Puas</span>
+        </div>
+
+        <div class="stat-card">
+          <span class="counter" data-target="29999">0</span>
+          <span class="label">Data Pengunjung</span>
+        </div>
+
+        <div class="stat-card">
+          <span class="counter" data-target="19999">0</span>
+          <span class="label">Buku Favorit</span>
+        </div>
+
+        <div class="stat-card">
+          <span class="counter" data-target="19999">0</span>
+          <span class="label">Pengunjung Terbaik</span>
+        </div>
+
+        <div class="stat-card">
+          <span class="counter" data-target="9999">0</span>
+          <span class="label">Rating Positif</span>
+        </div>
+      </div>
+
+      <script>
+        const counters = document.querySelectorAll('.counter');
+        counters.forEach(counter => {
+          const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+            const speed = 150; 
+            const increment = target / speed;
+
+            if (count < target) {
+              counter.innerText = Math.ceil(count + increment);
+              setTimeout(updateCount, 15);
+            } else {
+              counter.innerText = target;
+            }
+          };
+          updateCount();
+        });
+      </script>
+
+      <h1>Selamat Datang di Usaha Buku Alghifari</h1>
+      <h2>Anda bisa mencari aneka buku di toko kami</h2>
+      <p>Website ini berisi informasi tentang produk buku, bedah buku, dan testimoni pelanggan. Website buku sebaiknya memiliki desain yang bersih, rapi, dan menenangkan. Penggunaan tipografi yang mudah dibaca sangat krusial karena audiens Anda adalah orang-orang yang gemar membaca.</p>
+
+      <h1>Mengenal Ukuran Buku by Alghifari</h1>
+      <h2>Sebelum cari buku harus tau ukurannya</h2>
+      <p>Ukuran Buku adalah sebuah inisiatif yang berfokus pada kurasi literatur dan apresiasi terhadap objek buku. Di bawah arahan Alghifari, platform ini tumbuh menjadi wadah bagi para pecinta buku yang mencari judul-judul berkualitas.</p>
+
+      <h1>Jenis Jenis Buku by Alghifari</h1>
+      <h2>Sejauh mana sih pengetahuanmu tentang buku</h2>
+      <p>Kurasi personal oleh Alghifari seringkali didasarkan pada kualitas konten dan estetika buku itu sendiri. Setiap buku yang dipajang dipilih dengan pertimbangan mendalam.</p>
+
+      <h1>Tips Merawat Buku by Alghifari</h1>
+      <h2>Gimana sih cara kamu ngerawat buku</h2>
+      <p>Bersihkan debu secara rutin dan buka buku secara berkala agar kertas tidak lengket. Tips ini dibagikan oleh Alghifari untuk menjaga koleksi Anda tetap awet.</p>
+
+      <h1>Informasi mencari buku terbaik</h1>
+      <h2>Dapet info buku biasanya dari mana ya</h2>
+      <p>Ikuti rekomendasi dari penulis favorit atau penerbit berkualitas untuk menemukan bacaan terbaik versi Anda.</p>
+
+      <h1>Lokasi Toko Kami</h1>
+      <h2>Aku share lokasi biar kamu mudah dapat buku</h2>
+      <p>Tersembunyi di balik riuhnya Jalan Braga, toko kami adalah sebuah hidden gem bagi mereka yang mencari judul-judul buku unik.</p>
+
+      <h1>Kontak Admin Toko</h1>
+      <h2>Tak kasih kontaknya ya kalau beli buku</h2>
+      <p>Anda dapat menghubungi kami di Whatsapp 087741778191</p>
+    </div>
+  </section>
+</body>
+</html>
